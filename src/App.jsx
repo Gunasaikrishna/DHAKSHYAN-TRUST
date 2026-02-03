@@ -254,7 +254,7 @@ function App() {
 
     {/* English */}
     <p className="text-slate-600 text-sm leading-relaxed mb-4">
-      On Sunday, our team successfully conducted a food donation drive in
+      On 01-FEB-2026 Sunday, our team successfully conducted a food donation drive in
       various areas of Vijayawada. As part of this initiative, freshly
       prepared and nutritious meals were distributed to more than
       <span className="font-semibold"> 100 underprivileged individuals</span>.
@@ -264,7 +264,7 @@ function App() {
 
     {/* Telugu */}
     <p className="text-slate-600 text-sm leading-relaxed">
-      ఆదివారం రోజు విజయవాడ పరిసర ప్రాంతాలలో మా సంస్థ ఆధ్వర్యంలో
+      01-FEB-2026 ఆదివారం రోజు విజయవాడ పరిసర ప్రాంతాలలో మా సంస్థ ఆధ్వర్యంలో
       ఆహార పంపిణీ కార్యక్రమం విజయవంతంగా నిర్వహించబడింది.
       ఈ కార్యక్రమంలో భాగంగా
       <span className="font-semibold"> 100 మందికి పైగా అవసరమైన వారికి</span>
