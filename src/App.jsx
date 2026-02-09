@@ -43,8 +43,8 @@ function App() {
     />
 
     <div>
-      <span className="text-xl font-bold tracking-tight text-slate-900 block leading-none">
-        DHAKSHYANI
+      <span className="text-xl font-bold tracking-tight text-amber-600 block leading-none">
+        DHAKSHYANI SRI
       </span>
       <span className="text-[10px] tracking-[0.2em] text-amber-600 font-semibold uppercase">
         Charitable Trust
@@ -232,47 +232,160 @@ function App() {
             <p className="text-3xl md:text-4xl font-extrabold text-slate-900">Watch Our Work</p>
             <div className="w-20 h-1.5 bg-amber-600 mx-auto mt-6 rounded-full"></div>
           </div>
-        <div className="max-w-4xl mx-auto">
-  {/* Video */}
-  <div className="rounded-3xl overflow-hidden shadow-2xl bg-slate-100 aspect-video border border-slate-100">
-    <iframe
-      className="w-full h-full"
-      src="https://www.youtube.com/embed/-wd02WP8Nak"
-      title="Food Donation Drive – Vijayawada"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerPolicy="strict-origin-when-cross-origin"
-      allowFullScreen
-    ></iframe>
+<div className="max-w-6xl mx-auto space-y-16">
+
+  <div className="flex flex-col md:flex-row gap-10 items-stretch">
+    
+    {/* Left: Video (same height as content) */}
+    <div className="w-full md:w-1/2">
+      <div className="h-full rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border border-slate-200">
+        <iframe
+          className="w-full h-full"
+          src="https://www.youtube.com/embed/-wd02WP8Nak"
+          title="Food Donation Drive – Vijayawada"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
+
+    {/* Right: Content (same height as video) */}
+    <div className="w-full md:w-1/2">
+      <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">
+          Food Donation for 100 members– Vijayawada
+        </h3>
+
+        <p className="text-slate-600 text-sm leading-relaxed mb-4">
+          On 01-FEB-2026 Sunday, our team successfully conducted a food donation
+          drive in various areas of Vijayawada. Freshly prepared meals were
+          distributed to more than
+          <span className="font-semibold"> 100 underprivileged individuals</span>.
+        </p>
+
+        <p className="text-slate-600 text-sm leading-relaxed">
+          01-FEB-2026 ఆదివారం రోజు విజయవాడ పరిసర ప్రాంతాలలో మా సంస్థ ఆధ్వర్యంలో
+          ఆహార పంపిణీ కార్యక్రమం నిర్వహించబడింది.
+          <span className="font-semibold"> 100 మందికి పైగా అవసరమైన వారికి</span>
+          భోజనం అందజేయబడింది.
+        </p>
+      </div>
+    </div>
+
   </div>
 
-  {/* Description */}
-  <div className="mt-8 bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-slate-200">
-    <h3 className="text-2xl font-bold text-slate-900 mb-4">
-      Food Donation Drive – Vijayawada
-    </h3>
+</div>
 
-    {/* English */}
-    <p className="text-slate-600 text-sm leading-relaxed mb-4">
-      On 01-FEB-2026 Sunday, our team successfully conducted a food donation drive in
-      various areas of Vijayawada. As part of this initiative, freshly
-      prepared and nutritious meals were distributed to more than
-      <span className="font-semibold"> 100 underprivileged individuals</span>.
-      This drive reflects our continued commitment to fighting hunger and
-      supporting vulnerable communities with dignity and care.
-    </p>
+<div className="max-w-6xl mx-auto mt-12 md:mt-20 space-y-16">
 
-    {/* Telugu */}
-    <p className="text-slate-600 text-sm leading-relaxed">
-      01-FEB-2026 ఆదివారం రోజు విజయవాడ పరిసర ప్రాంతాలలో మా సంస్థ ఆధ్వర్యంలో
-      ఆహార పంపిణీ కార్యక్రమం విజయవంతంగా నిర్వహించబడింది.
-      ఈ కార్యక్రమంలో భాగంగా
-      <span className="font-semibold"> 100 మందికి పైగా అవసరమైన వారికి</span>
-      పరిశుభ్రంగా తయారు చేసిన భోజనం అందజేయబడింది.
-      ఆకలితో ఉన్నవారికి భోజనం అందించడం ద్వారా సమాజంలో సానుకూల మార్పు
-      తీసుకురావాలనే మా లక్ష్యానికి ఇది మరో అడుగు.
-    </p>
+  <div className="flex flex-col md:flex-row gap-10 items-stretch">
+    
+    {/* Left: Video (same height as content) */}
+    <div className="w-full md:w-1/2">
+      <div className="h-full rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border border-slate-200">
+        <iframe
+          className="w-full h-full"
+          src="https://www.youtube.com/embed/INKKAva0AIc"
+          title="Food Donation Drive – Vijayawada"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
+
+    {/* Right: Content (same height as video) */}
+    <div className="w-full md:w-1/2">
+      <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">
+          5,000rs Support – Vijayawada
+        </h3>
+
+<p className="text-slate-600 text-sm leading-relaxed mb-4">
+  Through this initiative, a generous supporter contributed
+  <span className="font-semibold"> ₹5,000</span>, which was used to provide
+  timely help to a person in need. This act of kindness reflects our mission
+  at Dhakshayani Foundation to stand with those facing difficult situations.
+  If you are willing to support someone in need or wish to be part of our
+  future initiatives, please feel free to comment or reach out to us.
+  Together, we can bring positive change to society.
+</p>
+
+
+<p className="text-slate-600 text-sm leading-relaxed">
+  ఈ కార్యక్రమం ద్వారా ఒక దాత
+  <span className="font-semibold"> ₹5,000</span> విరాళంగా అందించి,
+  అవసరంలో ఉన్న వ్యక్తికి సమయానికి సహాయం అందించబడింది.
+  ధాక్షాయణి ఫౌండేషన్‌గా, కష్టాల్లో ఉన్న వారికి తోడుగా నిలవడం మా లక్ష్యం.
+  మీరు కూడా అవసరమైన వారికి సహాయం చేయాలని లేదా మా రాబోయే కార్యక్రమాల్లో
+  భాగస్వాములు కావాలనుకుంటే, దయచేసి కామెంట్ చేయండి లేదా మమ్మల్ని సంప్రదించండి.
+  మనమంతా కలిసి సమాజంలో మంచి మార్పు తీసుకురాగలం.
+</p>
+
+
+      </div>
+    </div>
+
   </div>
+
+</div>
+
+
+<div className="max-w-6xl mx-auto mt-12 md:mt-20 space-y-16">
+
+  <div className="flex flex-col md:flex-row gap-10 items-stretch">
+    
+    {/* Left: Video */}
+    <div className="w-full md:w-1/2">
+      <div className="h-full rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border border-slate-200">
+        <iframe
+          className="w-full h-full"
+          src="https://www.youtube.com/embed/KM90d5HhZPU"
+          title="Instant Food Donation"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
+
+    {/* Right: Content */}
+    <div className="w-full md:w-1/2">
+      <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
+        
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">
+          Instant Food Donation – With Friends Support
+        </h3>
+
+        {/* English */}
+        <p className="text-slate-600 text-sm leading-relaxed mb-4">
+          With the sudden support of my friend and by the grace of God,
+          we were able to instantly arrange food and distribute it to
+          those in need. This initiative was not pre-planned, but it
+          reminded us that when the intention is pure, everything comes
+          together at the right moment. At Dhakshayani Foundation, we
+          believe that even small efforts, done with kindness, can bring
+          comfort and hope to many lives.
+        </p>
+
+        {/* Telugu */}
+        <p className="text-slate-600 text-sm leading-relaxed">
+          దేవుని ఆశీర్వాదంతో మరియు నా స్నేహితుడి తక్షణ సహకారంతో,
+          ఎలాంటి ముందస్తు ప్రణాళిక లేకుండానే ఆహారాన్ని ఏర్పాటు చేసి
+          అవసరమైన వారికి అందజేయగలిగాము. మంచి ఉద్దేశం ఉంటే,
+          అన్ని విషయాలు సరైన సమయంలో సహజంగానే జరుగుతాయని ఈ
+          కార్యక్రమం మాకు మరోసారి గుర్తు చేసింది.
+          ధాక్షాయణి ఫౌండేషన్‌గా, ఇలాంటి చిన్న సహాయాలు కూడా
+          చాలా మంది జీవితాల్లో ఆశ మరియు ఓదార్పును నింపుతాయని
+          మేము నమ్ముతున్నాము.
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
 </div>
 
         </div>
