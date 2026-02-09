@@ -7,8 +7,36 @@ import introVideo from "./images/foundation_intovideo.mp4";
 import qrCode from "./images/qrcode.png";
 import banner from "./images/Banner.jpg"
 
+import image1 from "./images/image1.jpeg"
+import image2 from "./images/image2.jpeg"
+import image3 from "./images/image3.jpeg"
+import image4 from "./images/image4.jpeg"
+import image6 from "./images/image6.jpeg"
+import image7 from "./images/image7.jpeg"
+import image8 from "./images/image8.jpeg"
+import image9 from "./images/image9.jpeg"
+import image10 from "./images/image10.jpeg"
+import image11 from "./images/image11.jpeg"
+import image12 from "./images/image12.jpeg"
+
+
+
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+const galleryImages = [
+  image1,
+  image2,
+  image3,
+  image4,
+  image6,
+  image7,
+  image8,
+  image9,
+  image10,
+  image11,
+  image12
+];
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 scroll-smooth">
@@ -196,33 +224,48 @@ function App() {
 
       {/* Food Donation Gallery */}
       <section id="gallery" className="py-24 bg-slate-50 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-            <div>
-              <h2 className="text-sm font-bold text-amber-600 uppercase tracking-widest mb-3">Impact in Action</h2>
-              <p className="text-3xl md:text-4xl font-extrabold text-slate-900">Food Donation Gallery</p>
-            </div>
-            <p className="text-slate-500 max-w-md text-sm">A glimpse into our recent food distribution drives across rural and urban communities.</p>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Header */}
+        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+          <div>
+            <h2 className="text-sm font-bold text-amber-600 uppercase tracking-widest mb-3">
+              Impact in Action
+            </h2>
+            <p className="text-3xl md:text-4xl font-extrabold text-slate-900">
+              Food Donation Gallery
+            </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-            {[
-              "https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=2070&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1591522810850-58128c5fb089?q=80&w=2070&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=2070&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?q=80&w=2070&auto=format&fit=crop",
-              "https://images.unsplash.com/photo-1532375810709-75b1da00537c?q=80&w=2070&auto=format&fit=crop"
-            ].map((url, index) => (
-              <div key={index} className="aspect-square overflow-hidden rounded-2xl md:rounded-[2rem] group cursor-pointer relative shadow-lg">
-                <img src={url} alt={`Donation Activity ${index + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                  <p className="text-white text-xs md:text-sm font-medium">Activity Location - Drive #{index + 101}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <p className="text-slate-500 max-w-md text-sm">
+            A glimpse into our recent food distribution drives across rural and urban communities.
+          </p>
         </div>
-      </section>
+
+        {/* Images Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+          {galleryImages.map((img, index) => (
+            <div
+              key={index}
+              className="aspect-square overflow-hidden rounded-2xl md:rounded-[2rem] group cursor-pointer relative shadow-lg"
+            >
+              <img
+                src={img}
+                alt={`Food Donation Activity ${index + 1}`}
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+
+              {/* Hover Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                <p className="text-white text-xs md:text-sm font-medium">
+                  Food Donation Drive #{index + 1}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
 
       {/* YouTube Section */}
       <section className="py-24 bg-white">
