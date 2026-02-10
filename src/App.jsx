@@ -605,7 +605,7 @@ const galleryImages = [
                 ))}
               </div>
             </div>
-            
+            {/* <meta name="google-site-verification" content="Mps8ekXSipq6yDT9gRVOQtZmbqwMn4beuWU0niKLLEA" /> */}
             <div>
               <h5 className="font-bold text-slate-900 mb-6 uppercase tracking-widest text-xs">Reach Us</h5>
               <ul className="space-y-4 text-slate-600 text-sm">
