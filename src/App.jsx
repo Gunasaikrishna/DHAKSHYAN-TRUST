@@ -72,7 +72,7 @@ const galleryImages = [
 
     <div>
       <span className="text-xl font-bold tracking-tight text-amber-600 block leading-none">
-        DHAKSHYANI SRI
+        DAKSHYANI SRI
       </span>
       <span className="text-[10px] tracking-[0.2em] text-amber-600 font-semibold uppercase">
         Charitable Trust
@@ -80,14 +80,7 @@ const galleryImages = [
     </div>
   </div>
 
-  {/* CENTER IMAGE */}
-{/* <div className="w-full h-[220px] md:h-[300px] lg:h-[380px] overflow-hidden">
-   <img
-          src={banner}
-          alt="Dhakshyani Charitable Trust Banner"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-</div> */}
+
 
 
 
@@ -170,7 +163,7 @@ const galleryImages = [
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-amber-500 uppercase bg-amber-500/10 rounded-full border border-amber-500/20">Empowering Lives Since 2024</span>
           <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1]">
-            Dhakshyani <span className="text-amber-500">Charitable</span> Trust
+            Dakshayani <span className="text-amber-500">Sri</span>  Foundation
           </h1>
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
             Dedicate to serving the underprivileged through food security, education, and community support initiatives. Together, we can create a world without hunger.
@@ -195,11 +188,15 @@ const galleryImages = [
             <div className="group text-center bg-slate-50 p-8 rounded-3xl transition-all hover:shadow-2xl hover:shadow-slate-200 border border-slate-100">
               <div className="relative inline-block mb-6">
                 <div className="absolute inset-0 bg-amber-600 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform"></div>
-                <img 
-                  src={Nanipic} 
-                  alt="Chairman" 
-                 className="relative w-48 h-48 md:w-56 md:h-56 object-contain rounded-2xl shadow-xl transition-all"
-                />
+
+  <img 
+    src={Nanipic}
+    alt="Chairman"
+    className="relative
+               w-56 h-64 md:w-64 md:h-72
+               object-cover object-top
+               rounded-2xl shadow-xl"
+  />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-1">Mr. Ragala Narendra</h3>
               <p className="text-amber-600 font-bold uppercase text-xs tracking-wider mb-4">Chairman & Founder</p>
@@ -207,14 +204,18 @@ const galleryImages = [
             </div>
             <div className="group text-center bg-slate-50 p-8 rounded-3xl transition-all hover:shadow-2xl hover:shadow-slate-200 border border-slate-100">
               <div className="relative inline-block mb-6">
-                <div className="absolute inset-0 bg-amber-600 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform"></div>
-                <img 
-                  src={Saipic}
-                  alt="Vice President" 
-                  className="relative w-48 h-48 md:w-56 md:h-56 object-contain rounded-2xl shadow-xl transition-all"
-                />
+                 <div className="absolute inset-0 bg-amber-600 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform"></div>
+
+  <img 
+    src={Saipic}
+    alt="Vice President"
+    className="relative
+               w-56 h-64 md:w-64 md:h-72
+               object-cover object-top
+               rounded-2xl shadow-xl"
+  />
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-1">Mr. Annavarapu Gunasai</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-1">Mr. Annavarapu Gunasai Krishna</h3>
               <p className="text-amber-600 font-bold uppercase text-xs tracking-wider mb-4">Vice President</p>
               <p className="text-slate-600 text-sm leading-relaxed">"Transparency and accountability are the pillars of our trust. We are committed to directing every rupee towards meaningful change."</p>
             </div>
@@ -296,9 +297,10 @@ const galleryImages = [
     {/* Right: Content (same height as video) */}
     <div className="w-full md:w-1/2">
       <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
-        <h3 className="text-2xl font-bold text-slate-900 mb-4">
-          Food Donation for 100 members– Vijayawada
-        </h3>
+       <h3 className="text-2xl font-bold text-slate-900 mb-4">
+ 🍛  Food Donation for 100 Members – Vijayawada
+</h3>
+
 
         <p className="text-slate-600 text-sm leading-relaxed mb-4">
           On 01-FEB-2026 Sunday, our team successfully conducted a food donation
@@ -341,15 +343,15 @@ const galleryImages = [
     {/* Right: Content (same height as video) */}
     <div className="w-full md:w-1/2">
       <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
-        <h3 className="text-2xl font-bold text-slate-900 mb-4">
-          5,000rs Support – Vijayawada
-        </h3>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">
+  ❤️ ₹5,000 Support – Vijayawada
+</h3>
 
 <p className="text-slate-600 text-sm leading-relaxed mb-4">
   Through this initiative, a generous supporter contributed
   <span className="font-semibold"> ₹5,000</span>, which was used to provide
   timely help to a person in need. This act of kindness reflects our mission
-  at Dhakshayani Foundation to stand with those facing difficult situations.
+  at Dakshayani Sri Foundation to stand with those facing difficult situations.
   If you are willing to support someone in need or wish to be part of our
   future initiatives, please feel free to comment or reach out to us.
   Together, we can bring positive change to society.
@@ -397,9 +399,10 @@ const galleryImages = [
     <div className="w-full md:w-1/2">
       <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
         
-        <h3 className="text-2xl font-bold text-slate-900 mb-4">
-          Instant Food Donation – With Friends Support
-        </h3>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">
+  👥🍽️ Instant Food Donation – With Friends Support
+</h3>
+
 
         {/* English */}
         <p className="text-slate-600 text-sm leading-relaxed mb-4">
@@ -407,7 +410,7 @@ const galleryImages = [
           we were able to instantly arrange food and distribute it to
           those in need. This initiative was not pre-planned, but it
           reminded us that when the intention is pure, everything comes
-          together at the right moment. At Dhakshayani Foundation, we
+          together at the right moment. At Dakshayani Sri Foundation, we
           believe that even small efforts, done with kindness, can bring
           comfort and hope to many lives.
         </p>
@@ -431,12 +434,72 @@ const galleryImages = [
 
 </div>
 
+
+<div className="max-w-6xl mx-auto mt-12 md:mt-20 space-y-16">
+
+  <div className="flex flex-col md:flex-row gap-10 items-stretch">
+    
+    {/* Left: Video */}
+    <div className="w-full md:w-1/2">
+      <div className="h-full rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border border-slate-200">
+        <iframe
+          className="w-full h-full"
+          src="https://www.youtube.com/embed/0WPFiKEkiJ8"
+          title="Cheppina Maata Nilabettukunna | ₹5000 Emergency Help"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
+
+    {/* Right: Content */}
+    <div className="w-full md:w-1/2">
+      <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
+        
+       <h3 className="text-2xl font-bold text-slate-900 mb-4">
+          🔥 Cheppina Maata Nilabettukunna 😢 <br />
+          <span className="text-amber-600 text-lg">
+            ₹5000 Emergency Help
+          </span>
+        </h3>
+
+        {/* English */}
+         <p className="text-slate-600 text-sm leading-relaxed mb-4">
+          Keeping our word even in difficult moments defines our values.
+          When an urgent need arose, we stood by our promise and provided
+          ₹5000 as emergency help. This act reminded us that humanity is
+          not about how much we give, but about standing firm when someone
+          is in need. At Dakshayani Sri Charitable Trust, we believe every
+          promise kept brings hope to a struggling heart.
+        </p>
+
+
+        {/* Telugu */}
+        <p className="text-slate-600 text-sm leading-relaxed">
+          మాట ఇచ్చిన తర్వాత దాన్ని నిలబెట్టుకోవడమే నిజమైన మానవత్వం.
+          అత్యవసర పరిస్థితిలో ఉన్న వారికి ₹5000 సహాయం చేయడం ద్వారా
+          మేము మా మాటను నిలబెట్టుకున్నాము. అవసర సమయంలో నిలబడే
+          మనసే నిజమైన సేవ అని ఈ సంఘటన మాకు మరోసారి గుర్తు చేసింది.
+          ధాక్షాయణి చారిటబుల్ ట్రస్ట్‌గా, ప్రతి సహాయం ఒక ఆశను
+          వెలిగిస్తుందని మేము నమ్ముతున్నాము.
+        </p>
+
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
         </div>
       </section>
 <div className="w-full h-[250px] overflow-hidden relative">
   <img
     src={banner}
-    alt="Dhakshyani Charitable Trust Banner"
+    alt="Dakshayani Sri Charitable Trust Banner"
     className="w-full h-full object-cover"
   />
 </div>
@@ -527,8 +590,8 @@ const galleryImages = [
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-xl">D</div>
                 <div>
-                  <span className="text-lg font-bold tracking-tight text-slate-900 block leading-none">DHAKSHYANI</span>
-                  <span className="text-[8px] tracking-[0.2em] text-amber-600 font-semibold uppercase">Charitable Trust</span>
+                  <span className="text-lg font-bold tracking-tight text-slate-900 block leading-none">DAKSHYANI SRI</span>
+                  <span className="text-[8px] tracking-[0.2em] text-amber-600 font-semibold uppercase">Charitable Trust Foundation</span>
                 </div>
               </div>
               <p className="text-slate-600 text-sm leading-relaxed mb-6">
@@ -587,7 +650,7 @@ const galleryImages = [
           </div>
           
           <div className="pt-8 border-t border-slate-200 text-center">
-            <p className="text-slate-400 text-xs">© 2024 Dhakshyani Charitable Trust. All rights reserved. Built for social impact.</p>
+            <p className="text-slate-400 text-xs">© 2024 Dakshayani Sri Charitable Trust Foundation. All rights reserved. Built for social impact.</p>
           </div>
         </div>
       </footer>
