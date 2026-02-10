@@ -7,3 +7,4 @@ export default defineConfig({
   //  base: '/DHAKSHYAN-TRUST/',
   base:"/"
 })
+  // "homepage": "https://gunasaikrishna.github.io/DHAKSHYAN-TRUST",
