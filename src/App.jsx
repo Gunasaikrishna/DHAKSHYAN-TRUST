@@ -18,6 +18,12 @@ import image9 from "./images/image9.jpeg"
 import image10 from "./images/image10.jpeg"
 import image11 from "./images/image11.jpeg"
 import image12 from "./images/image12.jpeg"
+import image13 from "./images/image13.png"
+import image14 from "./images/image14.png"
+import image15 from "./images/image15.JPG"
+
+
+
 
 
 
@@ -35,7 +41,10 @@ const galleryImages = [
   image9,
   image10,
   image11,
-  image12
+  image12,
+  image13,
+  image14,
+  image15
 ];
 
   return (
@@ -72,10 +81,10 @@ const galleryImages = [
 
     <div>
       <span className="text-xl font-bold tracking-tight text-amber-600 block leading-none">
-        DAKSHYANI SRI
+        DAKSHAYANI SRI 
       </span>
       <span className="text-[10px] tracking-[0.2em] text-amber-600 font-semibold uppercase">
-        Charitable Trust
+       Foundation Charitable Trust
       </span>
     </div>
   </div>
@@ -163,7 +172,7 @@ const galleryImages = [
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-amber-500 uppercase bg-amber-500/10 rounded-full border border-amber-500/20">Empowering Lives Since 2024</span>
           <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1]">
-            Dakshayani <span className="text-amber-500">Sri</span>  Foundation
+            Dakshayani <span className="text-amber-500">Sri</span>  Foundation Charitable Trust
           </h1>
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
             Dedicate to serving the underprivileged through food security, education, and community support initiatives. Together, we can create a world without hunger.
@@ -494,6 +503,63 @@ const galleryImages = [
 </div>
 
 
+
+<div className="max-w-6xl mx-auto mt-12 md:mt-20 space-y-16">
+
+  <div className="flex flex-col md:flex-row gap-10 items-stretch">
+    
+    {/* Left: Video */}
+    <div className="w-full md:w-1/2">
+      <div className="h-full rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border border-slate-200">
+        <iframe
+          className="w-full h-full"
+          src="https://www.youtube.com/embed/iWUb2r8EXzQ"
+          title="Emergency Help Event"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
+
+    {/* Right: Content */}
+    <div className="w-full md:w-1/2">
+      <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
+        
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">
+          🤝 Promise Kept with Support ❤️ <br />
+          <span className="text-amber-600 text-lg">
+            Special Thanks to Guna Sai Krishna & 100+ Subscribers
+          </span>
+        </h3>
+
+        {/* English */}
+        <p className="text-slate-600 text-sm leading-relaxed mb-4">
+          This event became possible because of the support of my friend
+          <b> Guna Sai Krishna </b> and our amazing 100+ subscribers.
+          Together, we stood by our word and successfully conducted this
+          help program. This moment shows that when people unite with a
+          kind heart, even small contributions can create a big impact.
+          We sincerely thank everyone who supported and believed in this cause.
+        </p>
+
+        {/* Telugu */}
+        <p className="text-slate-600 text-sm leading-relaxed">
+          ఈ కార్యక్రమం విజయవంతంగా నిర్వహించడానికి నా స్నేహితుడు
+          <b> గుణ సాయి కృష్ణ </b> గారు మరియు మా 100+ సబ్‌స్క్రైబర్స్
+          అందించిన సహాయం ఎంతో గొప్పది. మనం ఇచ్చిన మాట నిలబెట్టుకోవడం
+          మాత్రమే కాదు, అందరి సహకారంతో ఒక మంచి సేవ చేయగలిగాం.
+          ఈ సేవ కార్యక్రమానికి మద్దతు ఇచ్చిన ప్రతి ఒక్కరికీ
+          మా హృదయపూర్వక ధన్యవాదాలు.
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
         </div>
       </section>
 <div className="w-full h-[250px] overflow-hidden relative">
@@ -590,8 +656,8 @@ const galleryImages = [
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-xl">D</div>
                 <div>
-                  <span className="text-lg font-bold tracking-tight text-slate-900 block leading-none">DAKSHYANI SRI</span>
-                  <span className="text-[8px] tracking-[0.2em] text-amber-600 font-semibold uppercase">Charitable Trust Foundation</span>
+                  <span className="text-lg font-bold tracking-tight text-slate-900 block leading-none">DAKSHAYANI SRI</span>
+                  <span className="text-[8px] tracking-[0.2em] text-amber-600 font-semibold uppercase">Foundation Charitable Trust </span>
                 </div>
               </div>
               <p className="text-slate-600 text-sm leading-relaxed mb-6">
@@ -615,7 +681,7 @@ const galleryImages = [
                 </li>
                 <li className="flex gap-3">
                   <svg className="w-5 h-5 text-amber-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
-                  naniragala02@gmail.com
+                  narendraragala02@gmail.com
                 </li>
                 <li className="flex gap-3">
                   <svg className="w-5 h-5 text-amber-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
@@ -650,7 +716,7 @@ const galleryImages = [
           </div>
           
           <div className="pt-8 border-t border-slate-200 text-center">
-            <p className="text-slate-400 text-xs">© 2024 Dakshayani Sri Charitable Trust Foundation. All rights reserved. Built for social impact.</p>
+            <p className="text-slate-400 text-xs">© 2024 Dakshayani Sri Foundation Charitable Trust . All rights reserved. Built for social impact.</p>
           </div>
         </div>
       </footer>
