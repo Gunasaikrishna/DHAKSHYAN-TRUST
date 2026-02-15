@@ -719,6 +719,7 @@ const galleryImages = [
             <p className="text-slate-400 text-xs">© 2024 Dakshayani Sri Foundation Charitable Trust . All rights reserved. Built for social impact.</p>
           </div>
         </div>
+        
       </footer>
     </div>
   )
