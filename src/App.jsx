@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import logo from "./images/dakshalogo.jpeg";
-import Nanipic from"./images/nanipic.jpeg";
-import Saipic from"./images/saipic.jpeg";
+import Nanipic from "./images/nanipic.jpeg";
+import Saipic from "./images/saipic.jpeg";
 import centerImage from "./images/mekosannani.jpeg"; // New center image
 import introVideo from "./images/foundation_intovideo.mp4";
 import qrCode from "./images/qrcode.png";
@@ -30,22 +30,22 @@ import image15 from "./images/image15.JPG"
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-const galleryImages = [
-  image1,
-  image2,
-  image3,
-  image4,
-  image6,
-  image7,
-  image8,
-  image9,
-  image10,
-  image11,
-  image12,
-  image13,
-  image14,
-  image15
-];
+  const galleryImages = [
+    image1,
+    image2,
+    image3,
+    image4,
+    image6,
+    image7,
+    image8,
+    image9,
+    image10,
+    image11,
+    image12,
+    image13,
+    image14,
+    image15
+  ];
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 scroll-smooth">
@@ -69,55 +69,52 @@ const galleryImages = [
       <nav className="bg-white/90 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20 items-center">
-         <div className="flex items-center justify-between w-full">
-  
-  {/* Left: Logo + Trust Name */}
-  <div className="flex items-center gap-3">
-    <img
-      src={logo}
-      alt="Logo"
-      className="w-20 h-20 rounded-full shadow-xl object-contain"
-    />
+            <div className="flex items-center justify-between w-full">
 
-    <div>
-      <span className="text-xl font-bold tracking-tight text-amber-600 block leading-none">
-        DAKSHAYANI SRI 
-      </span>
-      <span className="text-[10px] tracking-[0.2em] text-amber-600 font-semibold uppercase">
-       Foundation Charitable Trust
-      </span>
-    </div>
-  </div>
+              {/* Left: Logo + Trust Name */}
+              <div className="flex items-center gap-3">
+                <img
+                  src={logo}
+                  alt="Logo"
+                  className="w-20 h-20 rounded-full shadow-xl object-contain"
+                />
 
-
+                <div>
+                  <span className="text-xl font-bold tracking-tight text-amber-600 block leading-none">
+                    DAKSHAYANI SRI
+                  </span>
+                  <span className="text-[10px] tracking-[0.2em] text-amber-600 font-semibold uppercase">
+                    Foundation Charitable Trust
+                  </span>
+                </div>
+              </div>
 
 
+              {/* Right: Desktop Menu */}
+              <div className="hidden md:flex space-x-8 items-center">
+                <a href="#about" className="text-sm font-medium text-slate-600 hover:text-amber-600 transition-colors">
+                  About
+                </a>
+                <a href="#leadership" className="text-sm font-medium text-slate-600 hover:text-amber-600 transition-colors">
+                  Leadership
+                </a>
+                <a href="#gallery" className="text-sm font-medium text-slate-600 hover:text-amber-600 transition-colors">
+                  Activities
+                </a>
+                <a
+                  href="#donate"
+                  className="bg-amber-600 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-amber-700 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                >
+                  Donate Now
+                </a>
+              </div>
 
-  {/* Right: Desktop Menu */}
-  <div className="hidden md:flex space-x-8 items-center">
-    <a href="#about" className="text-sm font-medium text-slate-600 hover:text-amber-600 transition-colors">
-      About
-    </a>
-    <a href="#leadership" className="text-sm font-medium text-slate-600 hover:text-amber-600 transition-colors">
-      Leadership
-    </a>
-    <a href="#gallery" className="text-sm font-medium text-slate-600 hover:text-amber-600 transition-colors">
-      Activities
-    </a>
-    <a
-      href="#donate"
-      className="bg-amber-600 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-amber-700 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-    >
-      Donate Now
-    </a>
-  </div>
-
-</div>
+            </div>
 
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center">
-              <button 
+              <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-slate-600 hover:text-amber-600 focus:outline-none p-2"
                 aria-label="Toggle menu"
@@ -148,8 +145,8 @@ const galleryImages = [
       </nav>
 
 
-{/* Intro Logo Video */}
-<section className="bg-white w-full">
+      {/* Intro Logo Video */}
+      <section className="bg-white w-full">
         <video
           autoPlay
           muted
@@ -171,9 +168,17 @@ const galleryImages = [
         <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center scale-105 blur-sm"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-amber-500 uppercase bg-amber-500/10 rounded-full border border-amber-500/20">Empowering Lives Since 2024</span>
-          <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-6 leading-[1.1]">
-            Dakshayani <span className="text-amber-500">Sri</span>  Foundation Charitable Trust
-          </h1>
+         <h1 className="text-4xl md:text-7xl font-extrabold mb-6 leading-[1.1]">
+  {"DAKSHAYANI SRI FOUNDATION".split("").map((char, i) => (
+    <span
+      key={i}
+      className={i % 2 === 1 ? "text-white" : "text-orange-500"}
+    >
+      {char}
+    </span>
+  ))}
+</h1>
+
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
             Dedicate to serving the underprivileged through food security, education, and community support initiatives. Together, we can create a world without hunger.
           </p>
@@ -198,14 +203,14 @@ const galleryImages = [
               <div className="relative inline-block mb-6">
                 <div className="absolute inset-0 bg-amber-600 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform"></div>
 
-  <img 
-    src={Nanipic}
-    alt="Chairman"
-    className="relative
+                <img
+                  src={Nanipic}
+                  alt="Chairman"
+                  className="relative
                w-56 h-64 md:w-64 md:h-72
                object-cover object-top
                rounded-2xl shadow-xl"
-  />
+                />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-1">Mr. Ragala Narendra</h3>
               <p className="text-amber-600 font-bold uppercase text-xs tracking-wider mb-4">Chairman & Founder</p>
@@ -213,16 +218,16 @@ const galleryImages = [
             </div>
             <div className="group text-center bg-slate-50 p-8 rounded-3xl transition-all hover:shadow-2xl hover:shadow-slate-200 border border-slate-100">
               <div className="relative inline-block mb-6">
-                 <div className="absolute inset-0 bg-amber-600 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform"></div>
+                <div className="absolute inset-0 bg-amber-600 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform"></div>
 
-  <img 
-    src={Saipic}
-    alt="Vice President"
-    className="relative
+                <img
+                  src={Saipic}
+                  alt="Vice President"
+                  className="relative
                w-56 h-64 md:w-64 md:h-72
                object-cover object-top
                rounded-2xl shadow-xl"
-  />
+                />
               </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-1">Mr. Annavarapu Gunasai Krishna</h3>
               <p className="text-amber-600 font-bold uppercase text-xs tracking-wider mb-4">Vice President</p>
@@ -234,48 +239,48 @@ const galleryImages = [
 
       {/* Food Donation Gallery */}
       <section id="gallery" className="py-24 bg-slate-50 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-          <div>
-            <h2 className="text-sm font-bold text-amber-600 uppercase tracking-widest mb-3">
-              Impact in Action
-            </h2>
-            <p className="text-3xl md:text-4xl font-extrabold text-slate-900">
-              Food Donation Gallery
+          {/* Header */}
+          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+            <div>
+              <h2 className="text-sm font-bold text-amber-600 uppercase tracking-widest mb-3">
+                Impact in Action
+              </h2>
+              <p className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                Food Donation Gallery
+              </p>
+            </div>
+            <p className="text-slate-500 max-w-md text-sm">
+              A glimpse into our recent food distribution drives across rural and urban communities.
             </p>
           </div>
-          <p className="text-slate-500 max-w-md text-sm">
-            A glimpse into our recent food distribution drives across rural and urban communities.
-          </p>
-        </div>
 
-        {/* Images Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-          {galleryImages.map((img, index) => (
-            <div
-              key={index}
-              className="aspect-square overflow-hidden rounded-2xl md:rounded-[2rem] group cursor-pointer relative shadow-lg"
-            >
-              <img
-                src={img}
-                alt={`Food Donation Activity ${index + 1}`}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-              />
+          {/* Images Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+            {galleryImages.map((img, index) => (
+              <div
+                key={index}
+                className="aspect-square overflow-hidden rounded-2xl md:rounded-[2rem] group cursor-pointer relative shadow-lg"
+              >
+                <img
+                  src={img}
+                  alt={`Food Donation Activity ${index + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
 
-              {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-                <p className="text-white text-xs md:text-sm font-medium">
-                  Food Donation Drive #{index + 1}
-                </p>
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                  <p className="text-white text-xs md:text-sm font-medium">
+                    Food Donation Drive #{index + 1}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-      </div>
-    </section>
+        </div>
+      </section>
 
       {/* YouTube Section */}
       <section className="py-24 bg-white">
@@ -285,290 +290,290 @@ const galleryImages = [
             <p className="text-3xl md:text-4xl font-extrabold text-slate-900">Watch Our Work</p>
             <div className="w-20 h-1.5 bg-amber-600 mx-auto mt-6 rounded-full"></div>
           </div>
-<div className="max-w-6xl mx-auto space-y-16">
+          <div className="max-w-6xl mx-auto space-y-16">
 
-  <div className="flex flex-col md:flex-row gap-10 items-stretch">
-    
-    {/* Left: Video (same height as content) */}
-    <div className="w-full md:w-1/2">
-      <div className="h-full rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border border-slate-200">
-        <iframe
-          className="w-full h-full"
-          src="https://www.youtube.com/embed/-wd02WP8Nak"
-          title="Food Donation Drive – Vijayawada"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
-    </div>
+            <div className="flex flex-col md:flex-row gap-10 items-stretch">
 
-    {/* Right: Content (same height as video) */}
-    <div className="w-full md:w-1/2">
-      <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
-       <h3 className="text-2xl font-bold text-slate-900 mb-4">
- 🍛  Food Donation for 100 Members – Vijayawada
-</h3>
+              {/* Left: Video (same height as content) */}
+              <div className="w-full md:w-1/2">
+                <div className="h-full rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border border-slate-200">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/-wd02WP8Nak"
+                    title="Food Donation Drive – Vijayawada"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
 
-
-        <p className="text-slate-600 text-sm leading-relaxed mb-4">
-          On 01-FEB-2026 Sunday, our team successfully conducted a food donation
-          drive in various areas of Vijayawada. Freshly prepared meals were
-          distributed to more than
-          <span className="font-semibold"> 100 underprivileged individuals</span>.
-        </p>
-
-        <p className="text-slate-600 text-sm leading-relaxed">
-          01-FEB-2026 ఆదివారం రోజు విజయవాడ పరిసర ప్రాంతాలలో మా సంస్థ ఆధ్వర్యంలో
-          ఆహార పంపిణీ కార్యక్రమం నిర్వహించబడింది.
-          <span className="font-semibold"> 100 మందికి పైగా అవసరమైన వారికి</span>
-          భోజనం అందజేయబడింది.
-        </p>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-<div className="max-w-6xl mx-auto mt-12 md:mt-20 space-y-16">
-
-  <div className="flex flex-col md:flex-row gap-10 items-stretch">
-    
-    {/* Left: Video (same height as content) */}
-    <div className="w-full md:w-1/2">
-      <div className="h-full rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border border-slate-200">
-        <iframe
-          className="w-full h-full"
-          src="https://www.youtube.com/embed/INKKAva0AIc"
-          title="Food Donation Drive – Vijayawada"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
-    </div>
-
-    {/* Right: Content (same height as video) */}
-    <div className="w-full md:w-1/2">
-      <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
-      <h3 className="text-2xl font-bold text-slate-900 mb-4">
-  ❤️ ₹5,000 Support – Vijayawada
-</h3>
-
-<p className="text-slate-600 text-sm leading-relaxed mb-4">
-  Through this initiative, a generous supporter contributed
-  <span className="font-semibold"> ₹5,000</span>, which was used to provide
-  timely help to a person in need. This act of kindness reflects our mission
-  at Dakshayani Sri Foundation to stand with those facing difficult situations.
-  If you are willing to support someone in need or wish to be part of our
-  future initiatives, please feel free to comment or reach out to us.
-  Together, we can bring positive change to society.
-</p>
+              {/* Right: Content (same height as video) */}
+              <div className="w-full md:w-1/2">
+                <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                    🍛  Food Donation for 100 Members – Vijayawada
+                  </h3>
 
 
-<p className="text-slate-600 text-sm leading-relaxed">
-  ఈ కార్యక్రమం ద్వారా ఒక దాత
-  <span className="font-semibold"> ₹5,000</span> విరాళంగా అందించి,
-  అవసరంలో ఉన్న వ్యక్తికి సమయానికి సహాయం అందించబడింది.
-  ధాక్షాయణి ఫౌండేషన్‌గా, కష్టాల్లో ఉన్న వారికి తోడుగా నిలవడం మా లక్ష్యం.
-  మీరు కూడా అవసరమైన వారికి సహాయం చేయాలని లేదా మా రాబోయే కార్యక్రమాల్లో
-  భాగస్వాములు కావాలనుకుంటే, దయచేసి కామెంట్ చేయండి లేదా మమ్మల్ని సంప్రదించండి.
-  మనమంతా కలిసి సమాజంలో మంచి మార్పు తీసుకురాగలం.
-</p>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    On 01-FEB-2026 Sunday, our team successfully conducted a food donation
+                    drive in various areas of Vijayawada. Freshly prepared meals were
+                    distributed to more than
+                    <span className="font-semibold"> 100 underprivileged individuals</span>.
+                  </p>
+
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    01-FEB-2026 ఆదివారం రోజు విజయవాడ పరిసర ప్రాంతాలలో మా సంస్థ ఆధ్వర్యంలో
+                    ఆహార పంపిణీ కార్యక్రమం నిర్వహించబడింది.
+                    <span className="font-semibold"> 100 మందికి పైగా అవసరమైన వారికి</span>
+                    భోజనం అందజేయబడింది.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div className="max-w-6xl mx-auto mt-12 md:mt-20 space-y-16">
+
+            <div className="flex flex-col md:flex-row gap-10 items-stretch">
+
+              {/* Left: Video (same height as content) */}
+              <div className="w-full md:w-1/2">
+                <div className="h-full rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border border-slate-200">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/INKKAva0AIc"
+                    title="Food Donation Drive – Vijayawada"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+
+              {/* Right: Content (same height as video) */}
+              <div className="w-full md:w-1/2">
+                <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                    ❤️ ₹5,000 Support – Vijayawada
+                  </h3>
+
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Through this initiative, a generous supporter contributed
+                    <span className="font-semibold"> ₹5,000</span>, which was used to provide
+                    timely help to a person in need. This act of kindness reflects our mission
+                    at Dakshayani Sri Foundation to stand with those facing difficult situations.
+                    If you are willing to support someone in need or wish to be part of our
+                    future initiatives, please feel free to comment or reach out to us.
+                    Together, we can bring positive change to society.
+                  </p>
 
 
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-
-<div className="max-w-6xl mx-auto mt-12 md:mt-20 space-y-16">
-
-  <div className="flex flex-col md:flex-row gap-10 items-stretch">
-    
-    {/* Left: Video */}
-    <div className="w-full md:w-1/2">
-      <div className="h-full rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border border-slate-200">
-        <iframe
-          className="w-full h-full"
-          src="https://www.youtube.com/embed/KM90d5HhZPU"
-          title="Instant Food Donation"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
-    </div>
-
-    {/* Right: Content */}
-    <div className="w-full md:w-1/2">
-      <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
-        
-      <h3 className="text-2xl font-bold text-slate-900 mb-4">
-  👥🍽️ Instant Food Donation – With Friends Support
-</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    ఈ కార్యక్రమం ద్వారా ఒక దాత
+                    <span className="font-semibold"> ₹5,000</span> విరాళంగా అందించి,
+                    అవసరంలో ఉన్న వ్యక్తికి సమయానికి సహాయం అందించబడింది.
+                    ధాక్షాయణి ఫౌండేషన్‌గా, కష్టాల్లో ఉన్న వారికి తోడుగా నిలవడం మా లక్ష్యం.
+                    మీరు కూడా అవసరమైన వారికి సహాయం చేయాలని లేదా మా రాబోయే కార్యక్రమాల్లో
+                    భాగస్వాములు కావాలనుకుంటే, దయచేసి కామెంట్ చేయండి లేదా మమ్మల్ని సంప్రదించండి.
+                    మనమంతా కలిసి సమాజంలో మంచి మార్పు తీసుకురాగలం.
+                  </p>
 
 
-        {/* English */}
-        <p className="text-slate-600 text-sm leading-relaxed mb-4">
-          With the sudden support of my friend and by the grace of God,
-          we were able to instantly arrange food and distribute it to
-          those in need. This initiative was not pre-planned, but it
-          reminded us that when the intention is pure, everything comes
-          together at the right moment. At Dakshayani Sri Foundation, we
-          believe that even small efforts, done with kindness, can bring
-          comfort and hope to many lives.
-        </p>
+                </div>
+              </div>
 
-        {/* Telugu */}
-        <p className="text-slate-600 text-sm leading-relaxed">
-          దేవుని ఆశీర్వాదంతో మరియు నా స్నేహితుడి తక్షణ సహకారంతో,
-          ఎలాంటి ముందస్తు ప్రణాళిక లేకుండానే ఆహారాన్ని ఏర్పాటు చేసి
-          అవసరమైన వారికి అందజేయగలిగాము. మంచి ఉద్దేశం ఉంటే,
-          అన్ని విషయాలు సరైన సమయంలో సహజంగానే జరుగుతాయని ఈ
-          కార్యక్రమం మాకు మరోసారి గుర్తు చేసింది.
-          ధాక్షాయణి ఫౌండేషన్‌గా, ఇలాంటి చిన్న సహాయాలు కూడా
-          చాలా మంది జీవితాల్లో ఆశ మరియు ఓదార్పును నింపుతాయని
-          మేము నమ్ముతున్నాము.
-        </p>
+            </div>
 
-      </div>
-    </div>
-
-  </div>
-
-</div>
+          </div>
 
 
-<div className="max-w-6xl mx-auto mt-12 md:mt-20 space-y-16">
+          <div className="max-w-6xl mx-auto mt-12 md:mt-20 space-y-16">
 
-  <div className="flex flex-col md:flex-row gap-10 items-stretch">
-    
-    {/* Left: Video */}
-    <div className="w-full md:w-1/2">
-      <div className="h-full rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border border-slate-200">
-        <iframe
-          className="w-full h-full"
-          src="https://www.youtube.com/embed/0WPFiKEkiJ8"
-          title="Cheppina Maata Nilabettukunna | ₹5000 Emergency Help"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
-    </div>
+            <div className="flex flex-col md:flex-row gap-10 items-stretch">
 
-    {/* Right: Content */}
-    <div className="w-full md:w-1/2">
-      <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
-        
-       <h3 className="text-2xl font-bold text-slate-900 mb-4">
-          🔥 Cheppina Maata Nilabettukunna 😢 <br />
-          <span className="text-amber-600 text-lg">
-            ₹5000 Emergency Help
-          </span>
-        </h3>
+              {/* Left: Video */}
+              <div className="w-full md:w-1/2">
+                <div className="h-full rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border border-slate-200">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/KM90d5HhZPU"
+                    title="Instant Food Donation"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
 
-        {/* English */}
-         <p className="text-slate-600 text-sm leading-relaxed mb-4">
-          Keeping our word even in difficult moments defines our values.
-          When an urgent need arose, we stood by our promise and provided
-          ₹5000 as emergency help. This act reminded us that humanity is
-          not about how much we give, but about standing firm when someone
-          is in need. At Dakshayani Sri Charitable Trust, we believe every
-          promise kept brings hope to a struggling heart.
-        </p>
+              {/* Right: Content */}
+              <div className="w-full md:w-1/2">
+                <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
+
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                    👥🍽️ Instant Food Donation – With Friends Support
+                  </h3>
 
 
-        {/* Telugu */}
-        <p className="text-slate-600 text-sm leading-relaxed">
-          మాట ఇచ్చిన తర్వాత దాన్ని నిలబెట్టుకోవడమే నిజమైన మానవత్వం.
-          అత్యవసర పరిస్థితిలో ఉన్న వారికి ₹5000 సహాయం చేయడం ద్వారా
-          మేము మా మాటను నిలబెట్టుకున్నాము. అవసర సమయంలో నిలబడే
-          మనసే నిజమైన సేవ అని ఈ సంఘటన మాకు మరోసారి గుర్తు చేసింది.
-          ధాక్షాయణి చారిటబుల్ ట్రస్ట్‌గా, ప్రతి సహాయం ఒక ఆశను
-          వెలిగిస్తుందని మేము నమ్ముతున్నాము.
-        </p>
+                  {/* English */}
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    With the sudden support of my friend and by the grace of God,
+                    we were able to instantly arrange food and distribute it to
+                    those in need. This initiative was not pre-planned, but it
+                    reminded us that when the intention is pure, everything comes
+                    together at the right moment. At Dakshayani Sri Foundation, we
+                    believe that even small efforts, done with kindness, can bring
+                    comfort and hope to many lives.
+                  </p>
+
+                  {/* Telugu */}
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    దేవుని ఆశీర్వాదంతో మరియు నా స్నేహితుడి తక్షణ సహకారంతో,
+                    ఎలాంటి ముందస్తు ప్రణాళిక లేకుండానే ఆహారాన్ని ఏర్పాటు చేసి
+                    అవసరమైన వారికి అందజేయగలిగాము. మంచి ఉద్దేశం ఉంటే,
+                    అన్ని విషయాలు సరైన సమయంలో సహజంగానే జరుగుతాయని ఈ
+                    కార్యక్రమం మాకు మరోసారి గుర్తు చేసింది.
+                    ధాక్షాయణి ఫౌండేషన్‌గా, ఇలాంటి చిన్న సహాయాలు కూడా
+                    చాలా మంది జీవితాల్లో ఆశ మరియు ఓదార్పును నింపుతాయని
+                    మేము నమ్ముతున్నాము.
+                  </p>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
 
 
-      </div>
-    </div>
+          <div className="max-w-6xl mx-auto mt-12 md:mt-20 space-y-16">
 
-  </div>
+            <div className="flex flex-col md:flex-row gap-10 items-stretch">
 
-</div>
+              {/* Left: Video */}
+              <div className="w-full md:w-1/2">
+                <div className="h-full rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border border-slate-200">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/0WPFiKEkiJ8"
+                    title="Cheppina Maata Nilabettukunna | ₹5000 Emergency Help"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+
+              {/* Right: Content */}
+              <div className="w-full md:w-1/2">
+                <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
+
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                    🔥 Cheppina Maata Nilabettukunna 😢 <br />
+                    <span className="text-amber-600 text-lg">
+                      ₹5000 Emergency Help
+                    </span>
+                  </h3>
+
+                  {/* English */}
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Keeping our word even in difficult moments defines our values.
+                    When an urgent need arose, we stood by our promise and provided
+                    ₹5000 as emergency help. This act reminded us that humanity is
+                    not about how much we give, but about standing firm when someone
+                    is in need. At Dakshayani Sri Charitable Trust, we believe every
+                    promise kept brings hope to a struggling heart.
+                  </p>
+
+
+                  {/* Telugu */}
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    మాట ఇచ్చిన తర్వాత దాన్ని నిలబెట్టుకోవడమే నిజమైన మానవత్వం.
+                    అత్యవసర పరిస్థితిలో ఉన్న వారికి ₹5000 సహాయం చేయడం ద్వారా
+                    మేము మా మాటను నిలబెట్టుకున్నాము. అవసర సమయంలో నిలబడే
+                    మనసే నిజమైన సేవ అని ఈ సంఘటన మాకు మరోసారి గుర్తు చేసింది.
+                    ధాక్షాయణి చారిటబుల్ ట్రస్ట్‌గా, ప్రతి సహాయం ఒక ఆశను
+                    వెలిగిస్తుందని మేము నమ్ముతున్నాము.
+                  </p>
+
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
 
 
 
-<div className="max-w-6xl mx-auto mt-12 md:mt-20 space-y-16">
+          <div className="max-w-6xl mx-auto mt-12 md:mt-20 space-y-16">
 
-  <div className="flex flex-col md:flex-row gap-10 items-stretch">
-    
-    {/* Left: Video */}
-    <div className="w-full md:w-1/2">
-      <div className="h-full rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border border-slate-200">
-        <iframe
-          className="w-full h-full"
-          src="https://www.youtube.com/embed/iWUb2r8EXzQ"
-          title="Emergency Help Event"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
-    </div>
+            <div className="flex flex-col md:flex-row gap-10 items-stretch">
 
-    {/* Right: Content */}
-    <div className="w-full md:w-1/2">
-      <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
-        
-        <h3 className="text-2xl font-bold text-slate-900 mb-4">
-          🤝 Promise Kept with Support ❤️ <br />
-          <span className="text-amber-600 text-lg">
-            Special Thanks to Guna Sai Krishna & 100+ Subscribers
-          </span>
-        </h3>
+              {/* Left: Video */}
+              <div className="w-full md:w-1/2">
+                <div className="h-full rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border border-slate-200">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/iWUb2r8EXzQ"
+                    title="Emergency Help Event"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
 
-        {/* English */}
-        <p className="text-slate-600 text-sm leading-relaxed mb-4">
-          This event became possible because of the support of my friend
-          <b> Guna Sai Krishna </b> and our amazing 100+ subscribers.
-          Together, we stood by our word and successfully conducted this
-          help program. This moment shows that when people unite with a
-          kind heart, even small contributions can create a big impact.
-          We sincerely thank everyone who supported and believed in this cause.
-        </p>
+              {/* Right: Content */}
+              <div className="w-full md:w-1/2">
+                <div className="h-full bg-white p-6 md:p-8 rounded-3xl shadow-lg border border-slate-200 flex flex-col">
 
-        {/* Telugu */}
-        <p className="text-slate-600 text-sm leading-relaxed">
-          ఈ కార్యక్రమం విజయవంతంగా నిర్వహించడానికి నా స్నేహితుడు
-          <b> గుణ సాయి కృష్ణ </b> గారు మరియు మా 100+ సబ్‌స్క్రైబర్స్
-          అందించిన సహాయం ఎంతో గొప్పది. మనం ఇచ్చిన మాట నిలబెట్టుకోవడం
-          మాత్రమే కాదు, అందరి సహకారంతో ఒక మంచి సేవ చేయగలిగాం.
-          ఈ సేవ కార్యక్రమానికి మద్దతు ఇచ్చిన ప్రతి ఒక్కరికీ
-          మా హృదయపూర్వక ధన్యవాదాలు.
-        </p>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                    🤝 Promise Kept with Support ❤️ <br />
+                    <span className="text-amber-600 text-lg">
+                      Special Thanks to Guna Sai Krishna & 100+ Subscribers
+                    </span>
+                  </h3>
 
-      </div>
-    </div>
+                  {/* English */}
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    This event became possible because of the support of my friend
+                    <b> Guna Sai Krishna </b> and our amazing 100+ subscribers.
+                    Together, we stood by our word and successfully conducted this
+                    help program. This moment shows that when people unite with a
+                    kind heart, even small contributions can create a big impact.
+                    We sincerely thank everyone who supported and believed in this cause.
+                  </p>
 
-  </div>
+                  {/* Telugu */}
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    ఈ కార్యక్రమం విజయవంతంగా నిర్వహించడానికి నా స్నేహితుడు
+                    <b> గుణ సాయి కృష్ణ </b> గారు మరియు మా 100+ సబ్‌స్క్రైబర్స్
+                    అందించిన సహాయం ఎంతో గొప్పది. మనం ఇచ్చిన మాట నిలబెట్టుకోవడం
+                    మాత్రమే కాదు, అందరి సహకారంతో ఒక మంచి సేవ చేయగలిగాం.
+                    ఈ సేవ కార్యక్రమానికి మద్దతు ఇచ్చిన ప్రతి ఒక్కరికీ
+                    మా హృదయపూర్వక ధన్యవాదాలు.
+                  </p>
 
-</div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
       </section>
-<div className="w-full h-[250px] overflow-hidden relative">
-  <img
-    src={banner}
-    alt="Dakshayani Sri Charitable Trust Banner"
-    className="w-full h-full object-cover"
-  />
-</div>
+      <div className="w-full h-[250px] overflow-hidden relative">
+        <img
+          src={banner}
+          alt="Dakshayani Sri Charitable Trust Banner"
+          className="w-full h-full object-cover"
+        />
+      </div>
       {/* Donation Details */}
       <section id="donate" className="py-24 bg-slate-900 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-amber-600/10 rounded-full blur-3xl -mr-48 -mt-48"></div>
@@ -578,7 +583,7 @@ const galleryImages = [
               <h2 className="text-amber-500 font-bold uppercase tracking-widest text-sm mb-4">Support Our Cause</h2>
               <h3 className="text-4xl md:text-5xl font-extrabold mb-8 leading-tight">Every Donation <span className="text-amber-500 italic font-light">Saves a Life</span>.</h3>
               <p className="text-slate-400 text-lg mb-10 leading-relaxed">Your contribution goes directly to the procurement and distribution of nutritious meals for those in need. We maintain 100% financial transparency.</p>
-              
+
               <div className="space-y-6">
                 <div className="flex gap-4 items-start">
                   <div className="w-10 h-10 bg-amber-600/20 rounded-lg flex items-center justify-center text-amber-500 shrink-0 border border-amber-500/30">
@@ -632,13 +637,13 @@ const galleryImages = [
                     <p className="text-xl font-black text-amber-600 font-mono">nani.ragala@ybl</p>
                   </div>
                   <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200">
-                   <div className="w-28 h-28 bg-white rounded-xl flex items-center justify-center border border-slate-200 shadow-sm">
-  <img
-    src={qrCode}
-    alt="UPI QR Code"
-    className="w-full h-full object-contain rounded-lg"
-  />
-</div>
+                    <div className="w-28 h-28 bg-white rounded-xl flex items-center justify-center border border-slate-200 shadow-sm">
+                      <img
+                        src={qrCode}
+                        alt="UPI QR Code"
+                        className="w-full h-full object-contain rounded-lg"
+                      />
+                    </div>
 
                   </div>
                 </div>
@@ -714,12 +719,12 @@ const galleryImages = [
               </div>
             </div>
           </div>
-          
+
           <div className="pt-8 border-t border-slate-200 text-center">
             <p className="text-slate-400 text-xs">© 2024 Dakshayani Sri Foundation Charitable Trust . All rights reserved. Built for social impact.</p>
           </div>
         </div>
-        
+
       </footer>
     </div>
   )
